@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Realm Tasks
 
 ---
@@ -92,3 +93,7 @@ This project adheres to the [Contributor Covenant Code of Conduct](https://realm
 # License
 
 The source code for RealmTasks is licensed under the [Apache License 2.0](LICENSE).
+=======
+# RealmTasks
+Realm Tasks Application
+>>>>>>> edef67a9ed0d6bbaea410f9c5a8490d3e26efbe2
