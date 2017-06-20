@@ -88,6 +88,7 @@ final class ViewController<Item: Object, Parent: Object>: UIViewController, UIGe
         _ = try? items.realm?.commitWrite(withoutNotifying: [listPresenter.notificationToken!])
     }
 
+
     // MARK: View Lifecycle
 
     init(parent: Parent, colors: [UIColor]) {

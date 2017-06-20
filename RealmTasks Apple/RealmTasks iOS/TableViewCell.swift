@@ -424,6 +424,7 @@ final class TableViewCell<Item: Object>: UITableViewCell, UITextViewDelegate whe
         if animated {
             try! item.realm?.write {
                 item.completed = completed
+                print(item.text + "completed")
             }
             vibrate()
             UIView.animate(withDuration: 0.2, animations: updateColor)

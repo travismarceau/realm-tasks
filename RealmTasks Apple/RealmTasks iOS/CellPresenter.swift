@@ -58,10 +58,14 @@ class CellPresenter<Item: Object> where Item: CellPresentable {
                 let completedCount = items.filter("completed = true").count
                 destinationIndexPath = IndexPath(row: items.count - completedCount - 1, section: 0)
             }
-
+            
             items.move(from: sourceIndexPath.row, to: destinationIndexPath.row)
             viewController.tableView.moveRow(at: sourceIndexPath, to: destinationIndexPath)
         }
+        
+//        try! item.realm!.write {
+//            print(item.completed)
+//        }
     }
 
     // MARK: Editing
